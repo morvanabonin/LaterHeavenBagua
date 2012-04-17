@@ -1,0 +1,433 @@
+.geral{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+#title {
+	position: absolute;
+	font-family: Verdana;
+	font-style:italic;
+}
+/* Start the trapeze id's style */
+
+/* This's the first trapeze with your hover 
+and three id's strips: one, two, three
+Location: top
+Color: Red
+Mean: Fire */
+#trapeze{
+    float: left;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -40px;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    height: 1px;
+    border: solid 34px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+}
+
+#trapeze:hover {
+    border-top: solid 120px #F58634;
+    color: #F58634;
+}
+
+
+    #stripe {
+        margin-top: -92px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeTwo {
+        margin-top:-1px;
+        margin-left: 47px;
+        width: 20px;
+        height: 25px;
+        background-color: #FFFFFF; 
+    }
+
+    #stripeThree {
+        margin-top:-1px;
+        margin-left: -30px;
+        width: 200px;
+        height: 22px;
+        background-color: #FFFFFF;
+    }
+
+/* This's the second trapeze with your hover 
+and four id's strips: four, five, six, seven
+Location: bottom
+Color: Blue
+Mean: Water */
+#trapeze_two{
+    float: left;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 300px;
+    width: 120px;
+    height: 1px;
+    border: solid 35px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(180deg) ;
+    -moz-transform: rotate(180deg) ;
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#trapeze_two:hover {
+    border-top: solid 120px #00AFEF;
+}
+
+    #stripeFour {
+        margin-top: -25px;
+        margin-left: 50px;
+        width: 20px;
+        height: 25px;
+        background-color: #FFFFFF; 
+    }
+
+    #stripeFive {
+        margin-top: -44px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeSix {
+        margin-top: -70px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF; 
+
+    }
+
+    #stripeSeven {
+        margin-top: -48px;
+        margin-left: 50px;
+        width: 20px;
+        height: 27px;
+        background-color: #FFFFFF;  
+
+    }
+
+
+/* The third trapeze with your hover 
+and four id's strips: eight, nine, ten
+Location: side right of top
+Color: purple
+Mean: Earth */
+#trapeze_three{
+    float: left;
+    position: absolute;
+    margin-left:500px;
+    margin-top: 50px;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    height: 1px;
+    border: solid 34px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(45deg) ;
+    -moz-transform: rotate(45deg) ;
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+#trapeze_three:hover {
+    border-top: solid 120px #3E4095;
+}
+
+    #stripeEight {
+        margin-top: -92px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeNine {
+        margin-top: 25px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;           
+    }
+
+    #stripeTen {
+        margin-top: -100px;
+        margin-left: 47px;
+        width: 20px;
+        height: 150px;
+        background-color: #FFFFFF;
+    }
+
+#trapeze_four{
+    float: left;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -270px;
+    width: 120px;
+    height: 1px;
+    border: solid 35px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(135deg) ;
+    -moz-transform: rotate(135deg) ;
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#trapeze_four:hover {
+    border-top: solid 120px #ED3237;
+}
+
+    #stripeEleven{
+        margin-top: -45px;
+        margin-left: -30px;
+        width: 200px;
+        height: 22px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeTwelve {
+        margin-top: -72px;
+        margin-left: -30px;
+        width: 200px;
+        height: 22px;
+        background-color: #FFFFFF; 
+    }
+
+#trapeze_five{
+    float: left;
+    position: absolute;
+    margin-left:580px;
+    margin-top: 230px;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    height: 1px;
+    border: solid 34px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(90deg) ;
+    -moz-transform: rotate(90deg) ;
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#trapeze_five:hover {
+    border-top: solid 120px #BDBFC1;
+}
+    #stripeThirteen {
+        margin-top: -28px;
+        margin-left: 50px;
+        width: 20px;
+        height: 29px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeFourteen {
+        margin-top: -44px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeFifteen{
+        margin-top: -71px;
+        margin-left: -30px;
+        width: 200px;
+        height: 22px;
+        background-color: #FFFFFF; 
+    }
+
+#trapeze_six{
+    float: left;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 50px;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    height: 1px;
+    border: solid 34px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(315deg) ;
+    -moz-transform: rotate(315deg) ;
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+#trapeze_six:hover {
+    border-top: solid 120px #00A859;
+}
+
+    #stripeSixteen {
+        margin-top: -92px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeSeventeen {
+        margin-top: 25px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;           
+    }
+
+    #stripeEighteen {
+        margin-top: -96px;
+        margin-left: 47px;
+        width: 20px;
+        height: 30px;
+        background-color: #FFFFFF; 
+    }
+
+#trapeze_seven{
+    position: absolute;
+    margin-left:30px;
+    margin-top: 230px;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    height: 1px;
+    border: solid 34px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(270deg) ;
+    -moz-transform: rotate(270deg) ;
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}	
+
+#trapeze_seven:hover {
+    border-top: solid 120px #48887B;
+}
+
+    #stripeNineteen {
+        margin-top: -92px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeTwenty {
+        margin-top: 25px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;       
+
+    }
+
+    #stripeTwentyOne{
+        margin-top: -50px;
+        margin-left: 47px;
+        width: 20px;
+        height: 80px;
+        background-color: #FFFFFF; 
+    }
+
+#trapeze_eight{
+    float: left;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 110px;
+    width: 120px;
+    height: 1px;
+    border: solid 35px transparent;
+    border-bottom: none;
+    border-top: solid 120px #000;
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+#trapeze_eight:hover {
+    border-top: solid 120px #848688;
+}
+
+    #stripeTwentyTwo {
+        margin-top: -92px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;
+
+    }
+
+    #stripeTwentyThree {
+        margin-top: 25px;
+        margin-left: -30px;
+        width: 200px;
+        height: 21px;
+        background-color: #FFFFFF;       
+    }
+
+    #stripeTwentyFour{
+        margin-top: -100px;
+        margin-left: 47px;
+        width: 20px;
+        height: 80px;
+        background-color: #FFFFFF; 
+    }
+
+/* End the trapeze id's style */   
+    
+.svg {
+    float: left;
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -530px;
+}
+
+
+.polyline {
+    -webkit-transform: scale(0.96) translate(18px, 18px);
+    -moz-transform: scale(0.96) translate(18px, 18px);
+    -ms-transform: scale(0.96) translate(18px, 18px);
+    -o-transform: scale(0.96) translate(18px, 18px);
+    transform: scale(0.96) translate(18px, 18px);
+}
+
+#credits {
+	margin-top: 5px;
+	font-family: verdana;
+	font-size: 12px;
+	text-align: center;
+	
+}
