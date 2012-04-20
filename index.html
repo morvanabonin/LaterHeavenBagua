@@ -108,16 +108,8 @@
             <div id="stripeTwentyThree"></div>
             <div id="stripeTwentyFour"></div>
         </div>
-		<div id="audioCenter">
-			<audio class="audio" preload="auto">
-                <source src="sounds/central.mp3" type="audio/mp3" />
-                <source src="sounds/central.ogg" type="audio/ogg" />
-                <p>Your browser does not support the audio tag.</p>
-                <p>Seu navegador não suporta o elemento audio da HTML5.</p>
-            </audio> 
-		</div>
             <?xml version="1.1"?>
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250">
+            <svg class="svg" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250">
                 <defs>
                     <path id="y" d="m 425,25 c 110.4,0 200,89.6 200,200 0,110.4 -89.6,200 -200,200 -110.4,0 -200,89.6 -200,200 0,110.4 89.6,200 200,200 C 645.8,825 825,645.8 825,425 825,204.2 645.8,25 425,25 z m 0,537.5 c 34.5,0 62.5,28 62.5,62.5 0,34.5 -28,62.5 -62.5,62.5 -34.5,0 -62.5,-28 -62.5,-62.5 0,-34.5 28,-62.5 62.5,-62.5 z"/>
                     <path id="d" d="m 450,200 c 0,27.61424 -22.38576,50 -50,50 -27.61424,0 -50,-22.38576 -50,-50 0,-27.61424 22.38576,-50 50,-50 27.61424,0 50,22.38576 50,50 z"/>
@@ -137,9 +129,19 @@
                                 <use xlink:href="#y"/>
                                 <use xlink:href="#d" transform="matrix(1.25,0,0,-1.25,-75,475)"/>
                             </g>
+                            <!-- div encapsulation, without it the audio does not work. -->
+                             <div id="encapsulation">
+                                <audio id="audio" preload="auto">
+                                    <source src="sounds/central.mp3" type="audio/mp3" />
+                                    <source src="sounds/central.ogg" type="audio/ogg" />
+                                    <p>Your browser does not support the audio tag.</p>
+                                    <p>Seu navegador não suporta o elemento audio da HTML5.</p>
+                                </audio> 
+                            </div>
                         </g>
                     </g>
                 </g>
+           
             </svg>
             <div id="credits">Sound effects obtained from <a href="http://www.freesfx.co.uk" target="_blank">http://www.freesfx.co.uk</a><br />
 			and <a href="http://mp3skull.com/" target="_blank">http://mp3skull.com/</a>
@@ -149,9 +151,9 @@
     </body>
     <script>
 	
-	var nodeListAudio = document.getElementsByClassName('audio'); 
+    var nodeListAudio = document.getElementsByClassName('audio'); 
 
-    function init() {  
+    function trapezeSound() {  
 
 		
 		var nodeListTrapeze = document.getElementsByClassName('trapeze'); 
@@ -178,6 +180,25 @@
 			}, false);
 		}
     };
-    window.onload = init;
+    window.onload = trapezeSound;
+    
+    function orchestral() {  
+        var geral = document.getElementById('geral');
+        var svg = document.getElementById('svg');
+        var audio = document.getElementById('audio');
+        
+        svg.addEventListener('click', function(){
+            audio.play();
+            audio.volume = 0.3;
+        }, false);
+        
+        geral.addEventListener('mousedown', function(){
+            audio.pause();
+            audio.currentTime = 0;
+        }, false);
+   
+     };
+    window.onclick = orchestral;
+    
     </script>        
 </html> 
